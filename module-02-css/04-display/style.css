@@ -1,0 +1,20 @@
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+
+    /* Block Element */
+    /* Starts on a new line */
+    /* display: block; */
+
+    /* Inline Element */
+    /* Stays on the same line */
+    /* display: inline; */
+
+    /* Inline + Block */
+    /* Same line but width/height work */
+    display: inline-block;
+
+    /* Remove element from page */
+    /* display: none; */
+}
