@@ -1,0 +1,35 @@
+/* Element Selector */
+/* Target lahat ng h1 elements */
+h1 {
+    color: red;
+}
+
+/* Class Selector */
+/* Target lahat ng may class="title" */
+.title {
+    color: blue;
+}
+
+/* ID Selector */
+/* Target element na may id="main-paragraph" */
+#main-paragraph {
+    color: green;
+}
+
+/* Class Selector */
+/* Target lahat ng may class="description" */
+.description {
+    color: blue;
+}
+
+/* Child Selector */
+/* Target direct p children ng .container */
+.container > p {
+    color: purple;
+}
+
+/* Multiple Selectors */
+/* Target lahat ng h1, h2, at h3 */
+h1, h2, h3 {
+    color: orange;
+}
