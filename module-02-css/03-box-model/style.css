@@ -1,0 +1,25 @@
+.box {
+    /* Width = lapad ng content area */
+    width: 300px;
+
+    /* Height = taas ng content area */
+    height: 200px;
+
+    /* Padding = space sa loob ng box */
+    /* Content ↔ Border */
+    padding: 50px;
+
+    /* Border = frame/outline ng box */
+    /* border: thickness style color */
+    border: 2px solid black;
+
+    /* Margin = space sa labas ng box */
+    /* Element ↔ Element */
+    margin: 50px;
+
+    /* Rounded corners */
+    border-radius: 50px;
+
+    /* Background color ng box */
+    background-color: lightgray;
+}
