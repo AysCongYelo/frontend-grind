@@ -3,41 +3,50 @@
 const arr = [1, 2, 3, 4, 5];
 
 // ====================
-// MAP
+// FOREACH
 // ====================
 
-const doubled = arr.map((num) => num * 2);
-
-console.log(doubled);
-
-// ====================
-// FILTER
-// ====================
-
-const evens = arr.filter((num) => num % 2 === 0);
-
-console.log(evens);
+arr.forEach((num) => {
+  console.log(num);
+});
 
 // ====================
-// FIND
+// REDUCE
 // ====================
 
-const found = arr.find((num) => num > 3);
+const sum = arr.reduce((total, num) => total + num, 0);
 
-console.log(found);
-
-// ====================
-// SOME
-// ====================
-
-const hasEven = arr.some((num) => num % 2 === 0);
-
-console.log(hasEven);
+console.log(sum);
 
 // ====================
-// EVERY
+// INCLUDES
 // ====================
 
-const allEven = arr.every((num) => num % 2 === 0);
+console.log(arr.includes(3));
+console.log(arr.includes(10));
 
-console.log(allEven);
+// ====================
+// SORT
+// ====================
+
+const numbers = [5, 3, 1, 4, 2];
+
+numbers.sort((a, b) => a - b);
+
+console.log(numbers);
+
+numbers.sort((a, b) => b - a);
+
+console.log(numbers);
+
+// ====================
+// SPREAD OPERATOR
+// ====================
+
+const newArr = [...arr, 6];
+
+console.log(newArr);
+
+const copy = [...arr];
+
+console.log(copy);
