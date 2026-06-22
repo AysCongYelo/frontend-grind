@@ -1,43 +1,43 @@
 "use strict";
 
-// ====================
-// CREATE ARRAY
-// ====================
-
 const arr = [1, 2, 3, 4, 5];
 
-console.log(arr);
-
 // ====================
-// LENGTH
+// MAP
 // ====================
 
-console.log(arr.length);
+const doubled = arr.map((num) => num * 2);
+
+console.log(doubled);
 
 // ====================
-// ADD ELEMENTS
+// FILTER
 // ====================
 
-arr.push(6); // Add to the end
-console.log(arr);
+const evens = arr.filter((num) => num % 2 === 0);
 
-arr.unshift(0); // Add to the beginning
-console.log(arr);
+console.log(evens);
 
 // ====================
-// REMOVE ELEMENTS
+// FIND
 // ====================
 
-arr.pop(); // Remove from the end
-console.log(arr);
+const found = arr.find((num) => num > 3);
 
-arr.shift(); // Remove from the beginning
-console.log(arr);
+console.log(found);
 
 // ====================
-// ACCESS ELEMENTS
+// SOME
 // ====================
 
-console.log(arr[0]); // First element
+const hasEven = arr.some((num) => num % 2 === 0);
 
-console.log(arr[arr.length - 1]); // Last element
+console.log(hasEven);
+
+// ====================
+// EVERY
+// ====================
+
+const allEven = arr.every((num) => num % 2 === 0);
+
+console.log(allEven);
