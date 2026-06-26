@@ -1,0 +1,129 @@
+/* Reset at Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #faf9f6; /* Warm off-white background */
+  color: #111111;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+/* Input at Search Button Group */
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+#input {
+  flex-grow: 1;
+  padding: 12px 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s;
+}
+
+#input:focus {
+  border-color: #999999; /* Banayad na kulay kapag naka-click */
+}
+
+#input::placeholder {
+  color: #a0a0a0;
+}
+
+#search-btn {
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+#search-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* --- ANG PROFILE CARD (Gawa ng JS mo) --- */
+#profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02); /* Manipis na shadow */
+}
+
+/* Avatar/Image Styling */
+#profile-card img {
+  border: 1px solid #e2e2e2;
+  margin-bottom: 20px;
+}
+
+/* Pangalan ng User */
+#profile-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+/* Bio Text */
+#profile-card p {
+  font-size: 15px;
+  color: #666666;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  word-break: break-word; /* Para hindi lumampas ang mahabang text */
+}
+
+/* Para sa Followers at Repos paragraphs (Para maging bold at may magandang kulay) */
+#profile-card p strong {
+  color: #111111;
+}
+
+/* Link Button papuntang GitHub Profile */
+#profile-card a {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111111;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#profile-card a:hover {
+  background-color: #f7f7f7;
+  border-color: #adadad;
+}
