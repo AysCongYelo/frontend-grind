@@ -1,9 +1,13 @@
+import { useState } from "react";
+
 function App() {
+  const [fruits, setFruits] = useState(["Apple", "Banana", "Orange"]);
+
   return (
     <>
-      <img src="https://via.placeholder.com/150" alt="Placeholder" />
-      <input type="text" />
-      <br />
+      <h1>{fruits.join(", ")}</h1>
+
+      <button onClick={() => setFruits([...fruits, "Mango"])}>Add Mango</button>
     </>
   );
 }
