@@ -1,11 +1,10 @@
-import Container from "./Container";
-
 function App() {
   return (
-    <Container>
-      <h1>Hello React</h1>
-      <p>Learning Children Props</p>
-    </Container>
+    <>
+      <img src="https://via.placeholder.com/150" alt="Placeholder" />
+      <input type="text" />
+      <br />
+    </>
   );
 }
 
