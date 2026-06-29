@@ -1,19 +1,19 @@
 function App() {
-  const status = "";
+  const users = [
+    { id: 1, name: "Juan", active: true },
+    { id: 2, name: "Maria", active: false },
+    { id: 3, name: "Pedro", active: true },
+  ];
 
-  if (status === "loading") {
-    return <h1>Loading...</h1>;
-  }
-
-  if (status === "success") {
-    return <h1>Data Loaded!</h1>;
-  }
-
-  if (status === "error") {
-    return <h1>Something went wrong.</h1>;
-  }
-
-  return <h1>Unknown Status</h1>;
+  return (
+    <>
+      {users
+        .filter((user) => user.active)
+        .map((user) => (
+          <p key={user.id}>{user.name}</p>
+        ))}
+    </>
+  );
 }
 
 export default App;
