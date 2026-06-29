@@ -1,15 +1,20 @@
-import { useState } from "react";
+import { useEffect } from "react";
 
 function App() {
-  const [fruits, setFruits] = useState(["Apple", "Banana", "Orange"]);
+  useEffect(() => {
+    console.log("Component mounted");
 
-  return (
-    <>
-      <h1>{fruits.join(", ")}</h1>
+    const timer = setInterval(() => {
+      console.log("Tick");
+    }, 1000);
 
-      <button onClick={() => setFruits([...fruits, "Mango"])}>Add Mango</button>
-    </>
-  );
+    return () => {
+      clearInterval(timer);
+      console.log("Cleanup");
+    };
+  }, []);
+
+  return <h1>Cleanup Example</h1>;
 }
 
 export default App;
