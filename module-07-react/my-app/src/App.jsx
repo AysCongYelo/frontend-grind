@@ -1,17 +1,17 @@
 function App() {
-  const users = [
-    { id: 1, name: "Juan", active: true },
-    { id: 2, name: "Maria", active: false },
-    { id: 3, name: "Pedro", active: true },
-  ];
+  const handleSubmit = (e) => {
+    // e.preventDefault();
+
+    console.log("Form Submitted!");
+  };
 
   return (
     <>
-      {users
-        .filter((user) => user.active)
-        .map((user) => (
-          <p key={user.id}>{user.name}</p>
-        ))}
+      <form onSubmit={handleSubmit}>
+        <input type="text" />
+
+        <button type="submit">Submit</button>
+      </form>
     </>
   );
 }
