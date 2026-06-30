@@ -11,30 +11,19 @@ function App() {
 
       <div className="button-row">
         <button
-          onClick={() => {
-            setCount(count - 1);
-          }}
+          onClick={() => setCount((prevCount) => prevCount - 1)}
+          disabled={count === 0}
         >
           -
         </button>
 
-        <button
-          onClick={() => {
-            setCount(count + 1);
-          }}
-        >
+        <button onClick={() => setCount((prevCount) => prevCount + 1)}>
           +
         </button>
       </div>
 
       <div className="reset-btn">
-        <button
-          onClick={() => {
-            setCount(0);
-          }}
-        >
-          Reset
-        </button>
+        <button onClick={() => setCount(0)}>Reset</button>
       </div>
     </div>
   );
