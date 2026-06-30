@@ -8,7 +8,6 @@ function App() {
 
       <button
         onClick={() => {
-          // console.log("Count:", count);
           setCount(count + 1);
         }}
       >
@@ -17,11 +16,18 @@ function App() {
 
       <button
         onClick={() => {
-          // console.log("Count:", count);
           setCount(count - 1);
         }}
       >
         -
+      </button>
+
+      <button
+        onClick={() => {
+          setCount(0);
+        }}
+      >
+        Reset
       </button>
     </>
   );
