@@ -1,0 +1,29 @@
+.counter-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.button-row {
+  display: flex;
+  gap: 16px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.count-display h1 {
+  font-size: 80px;
+  margin: 0;
+}
