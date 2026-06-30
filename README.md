@@ -10,3 +10,4 @@ A collection of frontend projects and exercises as I learn and practice — from
 ## React Projects
 
 - [Counter App](projects/react/counter-app) — useState, functional updates, conditional rendering, disabled states
+- [Color Picker](projects/react/color-picker) — useState, controlled components, dynamic styling
