@@ -3,15 +3,17 @@ import { useState } from "react";
 function App() {
   const [color, setColor] = useState("#000000");
   return (
-    <>
-      <h1>Color Picker</h1>
+    <div className="container">
+      <h1 style={{ color }}>Color Picker</h1>
       <div className="box" style={{ backgroundColor: color }}></div>
       <input
+        className="input"
         type="color"
         value={color}
         onChange={(e) => setColor(e.target.value)}
       />
-    </>
+      <p>Hexcode: {color}</p>
+    </div>
   );
 }
 
