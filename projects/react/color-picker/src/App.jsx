@@ -12,7 +12,7 @@ function App() {
         value={color}
         onChange={(e) => setColor(e.target.value)}
       />
-      <p>Hexcode: {color}</p>
+      <p>Hex: {color}</p>
     </div>
   );
 }

@@ -5,12 +5,17 @@
 }
 
 .box  {
-  padding: 120px 240px;
-  border: none;
+  width: 500px;
+  height: 300px;
   border-radius: 10px;
 
 }
 
 .input{
   margin-top: 10px;
+}
+
+.container p {
+  margin-top: 10px;
+  font-weight: bold;
 }
